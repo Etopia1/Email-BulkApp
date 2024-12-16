@@ -333,6 +333,11 @@ const Dashboard = () => {
           console.log(res)
           toast.success(res.data.message)
           setLoading(false)
+          setMessage("")
+       
+          setEmailInput("")
+          
+          setEmailObject({})
         })
         .catch((error) => {
           console.log(error)
@@ -592,11 +597,11 @@ export default Dashboard;
 //       });
 //       toast.success(response.data.message || 'Emails sent successfully!');
 //       setLoading(false);
-//       setMessage("")
-//       setSubject("")
-//       setEmailInput("")
-//       setLanguage('en')
-//       setEmailObject({})
+      // setMessage("")
+      // setSubject("")
+      // setEmailInput("")
+      // setLanguage('en')
+      // setEmailObject({})
 //     } catch (error) {
 //       console.error(error);
 //       toast.error(error.response?.data?.message || 'Error sending emails.');

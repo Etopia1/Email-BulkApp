@@ -5,7 +5,8 @@ import Sidebar from './EmailApp/SideBar';
 import { useSelector } from 'react-redux';
 
 const PrivaRoue = () => {
-  const token= useSelector((state) => state.token)
+  // const token= useSelector((state) => state.token)
+  const token= false
   return (
     <>
       <div className='w-[100%] h-[100vh]  flex items-center justify-center  '>
@@ -17,7 +18,7 @@ const PrivaRoue = () => {
             <Header/>
           </div>
           <div className=" w-[100%] h-[90%]  items-center justify-center flex  ">
-          { token ? <Outlet/> : <Navigate to='/'/>}
+          { !token ? <Outlet/> : <Navigate to='/'/>}
           </div>
         </div>
       </div>

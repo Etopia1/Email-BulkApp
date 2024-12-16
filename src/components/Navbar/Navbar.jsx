@@ -107,9 +107,9 @@ const Navbar = ({popup , setPopup}) => {
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-                Login
+                Send Email Now
               </span>
-              < IoPersonCircleSharp className="text-xl text-white drop-shadow-sm cursor-pointer"  onClick={()=> setPopup(true)}/>
+              < MdMarkEmailUnread className="text-xl text-white drop-shadow-sm cursor-pointer"  onClick={()=> setPopup(true)}/>
             </button> : <button
             onClick={()=> dispatch(clearUser())}
                

@@ -42,14 +42,14 @@ const Sidebar = () => {
       </div>
 
       {/* Logout Button */}
-      <div className="mb-4">
+      {/* <div className="mb-4">
       <button
           onClick={handleLogout}
           className="flex items-center gap-2 p-2 pr-4 rounded-md bg-red-600 text-white transition duration-300 hover:bg-red-700 w-[90%]"
         >
           <FaSignOutAlt size={18} /> Logout
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
