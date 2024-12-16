@@ -49,6 +49,7 @@ const Hero = ({popup, setPopup}) => {
   // const [token, setToken ]=useState(true)
   const token= useSelector((state) => state.token)
   const Nav = useNavigate()
+  const Navs = false
 
 
   return (
@@ -86,7 +87,7 @@ const Hero = ({popup, setPopup}) => {
                     data-aos-delay="300"
                   >
                     {
-                      token ? <button  className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full" onClick={()=> Nav('/dashboard')}>Go to dashBoard</button> : <button
+                      !Navs ? <button  className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full" onClick={()=> Nav('/dashboard')}>Go to dashBoard</button> : <button
                       onClick={()=> Nav("/login")}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >

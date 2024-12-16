@@ -255,14 +255,14 @@ const Headaer = () => {
             </div>
           </div>
           {/* Logout Button */}
-          <div>
+          {/* <div>
             <button
               onClick={handleLogout}
               className="flex items-center gap-2 py-2 px-4 w-full rounded-md hover:bg-red-600 transition duration-200"
             >
               <MdLogout size={20} /> Logout
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

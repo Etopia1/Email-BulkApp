@@ -70,7 +70,7 @@ const Navbar = ({popup , setPopup}) => {
    const [email, setEmail]=useState("")
    const [password, setPassword]=useState("")
    const [email2, setEmail2]=useState("")
-   const [password2, setPassword2]=useState("")
+   const [password2, setPassword2]=useState(false)
    const dispatch = useDispatch()
    const Nav = useNavigate()
 
@@ -102,8 +102,8 @@ const Navbar = ({popup , setPopup}) => {
 
            
             {
-              !token ? <button
-              onClick={() => Nav("/login")}
+              !password2 ? <button
+              onClick={() => Nav("/dashboard")}
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
